@@ -61,7 +61,7 @@ public class BaseZookeeper implements Watcher {
     }
 
     public String createPersistentNode4ACL(String path, String data, ArrayList<ACL> acl) throws Exception {
-        this.zookeeper.addAuthInfo("digest", "guest:guest123".getBytes());
+//        this.zookeeper.addAuthInfo("digest", "admin:admin12312121".getBytes());
         return this.zookeeper.create(path, data.getBytes(), acl, CreateMode.PERSISTENT);
     }
 
@@ -88,6 +88,7 @@ public class BaseZookeeper implements Watcher {
      * @throws InterruptedException
      */
     public String getData(String path) throws KeeperException, InterruptedException {
+        this.zookeeper.addAuthInfo("digest", "admin:admin123".getBytes());
         byte[] data = zookeeper.getData(path, false, null);
         if (data == null) {
             return "";
