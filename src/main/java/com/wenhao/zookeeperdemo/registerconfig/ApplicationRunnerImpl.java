@@ -1,25 +1,11 @@
 package com.wenhao.zookeeperdemo.registerconfig;
 
-import lombok.extern.slf4j.Slf4j;
-import org.I0Itec.zkclient.IZkChildListener;
-import org.I0Itec.zkclient.IZkDataListener;
-import org.I0Itec.zkclient.IZkStateListener;
-import org.I0Itec.zkclient.ZkClient;
-import org.apache.zookeeper.KeeperException;
-import org.apache.zookeeper.Watcher;
-import org.springframework.boot.ApplicationArguments;
-import org.springframework.boot.ApplicationRunner;
-import org.springframework.stereotype.Component;
-
-import java.io.IOException;
-import java.util.List;
-
-@Slf4j
-@Component
+/*@Slf4j
+//@Component
 public class ApplicationRunnerImpl implements ApplicationRunner {
 
-    /*@Value("${server.port}")
-    private String serverPort;*/
+    *//*@Value("${server.port}")
+    private String serverPort;*//*
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
@@ -64,7 +50,7 @@ public class ApplicationRunnerImpl implements ApplicationRunner {
                 }
             }
         });
-        /*ZooKeeper zooKeeper = new ZooKeeper("192.168.47.128", 100000, new Watcher() {
+        *//*ZooKeeper zooKeeper = new ZooKeeper("192.168.47.128", 100000, new Watcher() {
             @Override
             public void process(WatchedEvent watchedEvent) {
                 log.info(watchedEvent.getState().name());
@@ -81,7 +67,7 @@ public class ApplicationRunnerImpl implements ApplicationRunner {
             zooKeeper.create(path, "mykt".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         }
         String data = "http://127.0.0.1:" + serverPort;
-        zooKeeper.create(path + "/" + serverPort, data.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);*/
+        zooKeeper.create(path + "/" + serverPort, data.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);*//*
 
     }
-}
+}*/

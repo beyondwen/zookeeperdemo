@@ -2,12 +2,12 @@ package com.wenhao.zookeeperdemo.registerconfig.controller;
 
 import com.wenhao.zookeeperdemo.registerconfig.MyZkSerializer;
 import lombok.extern.slf4j.Slf4j;
-import org.I0Itec.zkclient.ZkClient;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooDefs;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.wenhao.zkclient.ZkClient;
 
 import java.io.IOException;
 

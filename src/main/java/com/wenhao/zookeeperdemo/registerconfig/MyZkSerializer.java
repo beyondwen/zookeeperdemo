@@ -1,8 +1,9 @@
 package com.wenhao.zookeeperdemo.registerconfig;
 
 import com.google.common.base.Charsets;
-import org.I0Itec.zkclient.exception.ZkMarshallingError;
-import org.I0Itec.zkclient.serialize.ZkSerializer;
+import org.wenhao.zkclient.exception.ZkMarshallingError;
+import org.wenhao.zkclient.serialize.ZkSerializer;
+
 
 public class MyZkSerializer implements ZkSerializer {
     @Override
